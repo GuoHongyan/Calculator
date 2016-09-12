@@ -384,12 +384,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     return;
                 }
                 num1=Double.valueOf(myStringTwo);
-                if(num1!=(int)num1)
-                    isError=true;
-                if(isError=true) {
-                    tvResult.setText("ERROR");
-                    return ;
-                }
+
                 tvResult.setText("十进制："+myStringTwo+"转换成二进制为："+Integer.toBinaryString((int)num1));
                 return;
 
@@ -400,12 +395,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     return;
                 }
                 num1=Double.valueOf(myString8);
-                if(num1!=(int)num1)
-                    isError=true;
-                if(isError=true) {
-                    tvResult.setText("ERROR");
-                    return ;
-                }
+
                 tvResult.setText("十进制："+myString8+"转换成八进制为："+Integer.toOctalString((int)num1));
                 return;
             case R.id.btn16:
@@ -415,12 +405,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     return;
                 }
                 num1=Double.valueOf(myString16);
-                if(num1!=(int)num1)
-                    isError=true;
-                if(isError=true) {
-                    tvResult.setText("ERROR");
-                    return ;
-                }
+
                 tvResult.setText("十进制："+myString16+"转换成二进制为："+Integer.toHexString((int)num1));
                 return;
             case R.id.btnSin:
